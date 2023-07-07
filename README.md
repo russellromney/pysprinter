@@ -20,7 +20,7 @@ Dependencies that don't require a specific version can be left blank.
 # myfile.py
 @requirements({'requests': '2.30.0','logzero':''})
 def my_function(input_value: str):
-    import torch
+    import requests
     return input_value
 ```
 
@@ -40,7 +40,7 @@ If your function has optional or named arguments, you can pass arbitrary `kwargs
 # myfile.py
 @requirements({'requests': ''})
 def my_function(input_value: str, arg1: str=None, arg2: str):
-    import torch
+    import requests
     return [input_value, arg1, arg2]
 ```
 
